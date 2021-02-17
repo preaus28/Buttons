@@ -28,11 +28,13 @@
 }
 .loading span {
     position: absolute;
+    width: 100px;
+    height: 100px;
     box-sizing: border-box;
-    background: red;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 100px;
     animation: a2 2s linear infinite;
+    font-size: 12px;
 }
 .loading::before,.loading::after {
     content: '';
@@ -66,7 +68,7 @@
 </head>
 <body>
     <div class="loading">
-        
+        <span>Loading..</span>
     </div>
     <script src="app.js"></script>
 </body>
